@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformers Fact Fair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .character-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .character-image {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        .character-info {
+            padding: 1rem;
+        }
+
+        .character-info h2 {
+            color: #1a237e;
+            margin-bottom: 0.5rem;
+        }
+
+        .character-info p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transformers Fact Fair</h1>
+        <p>Explore the different variants of your favorite Autobots!</p>
+    </header>
+
+    <div class="container">
+        <div class="character-grid">
+            <!-- Optimus Prime -->
+            <div class="character-card">
+              <div class="character-image">
+                <img src="assets/Optimus_Prime_TFD_Robot.webp" alt="Optimus Prime" style="width: 100%; height: 100%; object-fit: cover; object-position: top center;">
+              </div>
+                <div class="character-info">
+                    <h2>Optimus Prime</h2>
+                    <p>G1 Version - The legendary leader of the Autobots, known for his wisdom and courage.</p>
+                    <p>Fun fact about Optimus: Sentinel Prime was the Prime of four Optimus Prime. </p>
+                </div>
+            </div>
+
+            <!-- Bumblebee -->
+            <div class="character-card">
+                <div class="character-image">
+                    [Bumblebee Image Placeholder]
+                </div>
+                <div class="character-info">
+                    <h2>Bumblebee</h2>
+                    <p>G1 Version - The beloved scout of the Autobots, small but brave and loyal.</p>
+                </div>
+            </div>
+
+            <!-- Wheeljack -->
+            <div class="character-card">
+                <div class="character-image">
+                    [Wheeljack Image Placeholder]
+                </div>
+                <div class="character-info">
+                    <h2>Wheeljack</h2>
+                    <p>G1 Version - The Autobots' brilliant inventor and scientist.</p>
+                </div>
+            </div>
+
+            <!-- Ironhide -->
+            <div class="character-card">
+                <div class="character-image">
+                    [Ironhide Image Placeholder]
+                </div>
+                <div class="character-info">
+                    <h2>Ironhide</h2>
+                    <p>G1 Version - The tough and reliable weapons specialist of the Autobots.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
